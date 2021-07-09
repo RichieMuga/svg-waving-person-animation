@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: white;
+  text-align: center;
+}
+
+#Waving-hand {
+  -webkit-animation: waving-motion 3s ease-in-out infinite alternate;
+          animation: waving-motion 3s ease-in-out infinite alternate;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  transform-box: fill-box;
+}
+
+#Head {
+  -webkit-animation: waving-head 5s ease-in-out infinite alternate;
+          animation: waving-head 5s ease-in-out infinite alternate;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  transform-box: fill-box;
+}
+
+@-webkit-keyframes waving-motion {
+  0% {
+    -webkit-transform: rotatez(0deg);
+            transform: rotatez(0deg);
+  }
+  100% {
+    -webkit-transform: rotatez(-18deg);
+            transform: rotatez(-18deg);
+  }
+}
+
+@keyframes waving-motion {
+  0% {
+    -webkit-transform: rotatez(0deg);
+            transform: rotatez(0deg);
+  }
+  100% {
+    -webkit-transform: rotatez(-18deg);
+            transform: rotatez(-18deg);
+  }
+}
+
+@-webkit-keyframes waving-head {
+  0% {
+    -webkit-transform: rotatez(0deg);
+            transform: rotatez(0deg);
+  }
+  50% {
+    -webkit-transform: rotatez(8deg);
+            transform: rotatez(8deg);
+  }
+  100% {
+    -webkit-transform: rotatez(-8deg);
+            transform: rotatez(-8deg);
+  }
+}
+
+@keyframes waving-head {
+  0% {
+    -webkit-transform: rotatez(0deg);
+            transform: rotatez(0deg);
+  }
+  50% {
+    -webkit-transform: rotatez(8deg);
+            transform: rotatez(8deg);
+  }
+  100% {
+    -webkit-transform: rotatez(-8deg);
+            transform: rotatez(-8deg);
+  }
+}
+/*# sourceMappingURL=main.css.map */

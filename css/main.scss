@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: white;
+  text-align: center;
+}
+
+#Waving-hand {
+  animation: waving-motion 3s ease-in-out infinite alternate;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+#Head {
+  animation: waving-head 5s ease-in-out infinite alternate;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+@keyframes waving-motion {
+  0% {
+    transform: rotatez(0deg);
+  }
+
+  100% {
+    transform: rotatez(-18deg);
+  }
+}
+@keyframes waving-head {
+  0% {
+    transform: rotatez(0deg);
+  }
+  50% {
+    transform: rotatez(8deg);
+  }
+
+  100% {
+    transform: rotatez(-8deg);
+  }
+}
